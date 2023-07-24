@@ -1,14 +1,26 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
 
 export default createStore({
-  state: {
+  state() {
+    return {
+      messages: [],
+      messagesDropList: [],
+    };
   },
-  getters: {
-  },
+  getters: {},
   mutations: {
+    alert(state, { title, text, error = false, delay = 2500 }) {
+      const now = Date.now();
+
+      state.messages.push({ id: now, title, text, error });
+      setTimeout(() => {
+        state.messagesDropList = [...state.messagesDropList, now];
+      }, delay);
+    },
+
+    dropMessage(state, messageId) {
+      state.messages = state.messages.filter((m) => m.id !== messageId);
+    },
   },
-  actions: {
-  },
-  modules: {
-  }
-})
+  modules: {},
+});

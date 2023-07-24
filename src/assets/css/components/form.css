@@ -1,0 +1,26 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  min-width: 15em;
+  width: fit-content;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5em;
+  box-shadow: var(--box-shadow);
+}
+
+.form > h2 {
+  font-size: 1.6em;
+  margin: 0.2em 0;
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__field > p {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}

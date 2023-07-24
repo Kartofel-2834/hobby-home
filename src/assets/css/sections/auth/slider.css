@@ -1,0 +1,11 @@
+.auth__form__slider__slide {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+@media screen and (max-width: 1150px) {
+  .auth__form__slider {
+    display: none;
+  }
+}

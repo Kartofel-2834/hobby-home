@@ -1,0 +1,64 @@
+.club__modal__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.club__modal__list__member {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: var(--light-primary);
+  gap: 1.25em;
+  padding: 1em 1.5em 1em 1em;
+  border-radius: 6px;
+  transition: 0.2s ease-in-out;
+}
+
+.club__modal__list__member:hover {
+  background-color: var(--primary);
+  color: var(--sub-text);
+}
+
+.club__modal__list__member:hover > svg {
+  transform: translateX(0.5em);
+  background-color: var(--sub-text);
+  color: var(--primary);
+}
+
+.club__modal__list__member__main {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.club__modal__list__member__info {
+  display: flex;
+  gap: 0.35em;
+  flex-direction: column;
+}
+
+.club__modal__list__member__info__name {
+  font-weight: 600;
+}
+
+.club__modal__list__member__info__role {
+  opacity: 0.6;
+  font-weight: 600;
+}
+
+.club__modal__list__member .avatar {
+  font-size: 0.3em;
+}
+
+.club__modal__list__member > svg {
+  background-color: var(--main-text);
+  color: var(--sub-text);
+  border-radius: 100%;
+  font-size: 1.25em;
+  width: 1em;
+  height: 1em;
+  padding: 0.5em;
+  transition: 0.2s ease-in-out;
+}

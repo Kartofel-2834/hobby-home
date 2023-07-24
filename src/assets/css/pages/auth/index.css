@@ -1,0 +1,28 @@
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.auth__form {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 5em;
+  padding: 2em;
+  min-width: 25em;
+  max-width: 1000px;
+}
+
+.auth__form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75em;
+}
+
+@media screen and (max-width: 1150px) {
+  .auth__form {
+    grid-template-columns: 1fr;
+  }
+}

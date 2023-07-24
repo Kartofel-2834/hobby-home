@@ -1,0 +1,31 @@
+.link {
+  appearance: none;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  font-size: inherit;
+  color: inherit;
+  text-align: right;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.link.link_active::after,
+.link:hover::after {
+  transform: scale(1);
+}
+
+.link::after {
+  content: "";
+  width: 100%;
+  margin-top: 6px;
+  height: 3px;
+  border-radius: 8px;
+  background-color: var(--primary);
+  transform: scaleX(0);
+  transition: 0.15s ease-in-out;
+}
+
+.link.link_dark::after {
+  background-color: #619add;
+}

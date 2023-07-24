@@ -1,0 +1,14 @@
+.club__note pre {
+    padding: 0 0.5em;
+}
+
+.club__note .slider__pipeline__card {
+  max-height: 60vh;
+}
+
+.club__note__footer {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  justify-content: space-between;
+}

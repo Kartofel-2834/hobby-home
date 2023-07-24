@@ -2,6 +2,10 @@
 node_modules
 /dist
 
+package-lock.json
+.git
+
+src/utils/constants.js
 
 # local env files
 .env.local

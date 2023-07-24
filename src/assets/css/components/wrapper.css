@@ -1,0 +1,34 @@
+.wrapper {
+  display: flex;
+  max-height: 100vh;
+}
+
+.wrapper__content {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.wrapper__slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em auto;
+  gap: 1.5em;
+  max-width: 800px;
+  width: calc(100% - 2em);
+}
+
+.wrapper__slot .form {
+  width: -webkit-fill-available;
+  width: -moz-available;
+}
+
+.wrapper__slot .form h2 {
+  font-size: 1.7em;
+}
+
+@media screen and (max-width: 850px) {
+  .wrapper__content {
+    padding-bottom: 8em;
+  }
+}

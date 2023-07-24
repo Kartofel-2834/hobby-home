@@ -1,0 +1,101 @@
+.user {
+  display: grid;
+  grid-template-columns: min-content auto;
+}
+
+.user__info_a {
+  width: fit-content;
+}
+
+.user__info_a,
+.user__info_b,
+.user__text-fields {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1em;
+  gap: 1em;
+  max-width: 100%;
+}
+
+.user__info_a {
+  justify-content: center;
+}
+
+.user__info_a .user__club {
+  width: auto;
+  justify-content: space-between;
+}
+
+.user__info_b {
+  justify-content: space-between;
+}
+
+.user__info_b button {
+  width: fit-content;
+}
+
+.user__info_b h2 {
+  margin-top: 0.5em;
+  text-align: left;
+}
+
+.user__info_b input {
+  width: 50%;
+}
+
+.user__info_b textarea:disabled,
+.user__description {
+  opacity: 0.75;
+}
+
+.user__description {
+  font-size: 0.9em;
+}
+
+.user__controls {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 0.15em;
+}
+
+@media screen and (max-width: 850px) {
+  .user {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user,
+  .user__info_a,
+  .user__info_b,
+  .user__text-fields {
+    align-items: center;
+  }
+
+  .user__info_b h2,
+  .user__info_b pre {
+    text-align: center;
+  }
+
+  .user__club {
+    justify-content: center;
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+  }
+
+  .user__info_b input,
+  .user__info_b textarea {
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+    text-align: center;
+  }
+
+  .user__controls {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 2em;
+  }
+
+  .user__controls button {
+    width: 100%;
+  }
+}

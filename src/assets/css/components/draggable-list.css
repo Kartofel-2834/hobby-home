@@ -1,0 +1,16 @@
+.draggable-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.draggable-list__item {
+  position: relative;
+  user-select: none;
+  z-index: 0;
+  transition: 0.25s ease-in-out;
+}
+
+.draggable-list__item_dragging {
+  z-index: 10;
+  transition: none;
+}

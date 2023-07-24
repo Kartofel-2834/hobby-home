@@ -1,0 +1,41 @@
+.tag {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  background-color: var(--main-text);
+  color: var(--sub-text);
+  gap: 1em;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.tag_disabled {
+  cursor: default;
+}
+
+.tag_light {
+  background-color: var(--light-primary);
+  color: var(--main-text)
+}
+
+.tag:not(.tag_disabled):hover {
+  color: var(--main-text);
+  background-color: var(--primary);
+}
+
+.tag:not(.tag_disabled):active {
+  opacity: 0.9;
+  transform: scale(0.99);
+}
+
+.tag.tag_light:not(.tag_disabled):hover {
+  color: var(--sub-text);
+}
+
+
+.tag .avatar {
+  font-size: 0.15em;
+}

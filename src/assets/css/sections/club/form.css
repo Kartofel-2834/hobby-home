@@ -1,0 +1,87 @@
+.club__form input {
+  text-align: center;
+  width: 12.5em;
+}
+
+.club__form textarea {
+  max-width: 30em;
+  width: 90%;
+  height: 20em;
+  min-height: 15em;
+}
+
+.club__form__members-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  max-height: 50vh;
+}
+
+.club__form__member {
+  margin: 0.25em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 0.5em 2em 0.5em 0.5em;
+  background-color: var(--light-primary);
+  border-radius: 8px;
+}
+
+.club__form__member pre {
+  font-weight: 600;
+}
+
+.club__form__member .avatar {
+  font-size: 0.3em;
+}
+
+.club__form__member__info,
+.club__form__member__controls {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.club__form__member__controls .button {
+  font-size: 1em;
+}
+
+@media screen and (max-width: 850px) {
+  .club__form textarea {
+    max-width: -webkit-fill-available;
+    max-width: -moz-fill-available;
+  }
+
+  .club__form__member-list {
+    width: 90%;
+  }
+
+  .club__form__member {
+    padding: 1em;
+  }
+
+  .club__form__member,
+  .club__form__member__info {
+    flex-direction: column;
+  }
+
+  .club__form__member__info {
+    font-size: 1.25em;
+    padding: 0.25em;
+    align-items: center;
+  }
+
+  .club__form__member__info .avatar {
+    font-size: 0.5em;
+  }
+
+  .club__form__member__controls {
+    gap: 0.5em;
+  }
+
+  .club__form__member__controls .button {
+    width: fit-content;
+  }
+}

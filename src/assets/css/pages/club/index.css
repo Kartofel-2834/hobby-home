@@ -1,0 +1,13 @@
+.club .form p {
+  font-size: 1.1em;
+}
+
+.club__modal .modal__content {
+  min-width: 35em;
+}
+
+@media screen and (max-width: 850px) {
+  .club__modal .modal__content {
+    min-width: 0;
+  }
+}

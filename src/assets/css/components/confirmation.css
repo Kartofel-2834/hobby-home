@@ -1,0 +1,24 @@
+.confirmation .modal__content {
+  max-width: 600px;
+}
+
+.confirmation h2 {
+  margin: 0 2em;
+}
+
+.confirmation__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+@media screen and (max-width: 850px) {
+  .confirmation h2 {
+    margin: 0 0 1em 0;
+  }
+
+  .confirmation {
+    font-size: 1.5em;
+  }
+}
